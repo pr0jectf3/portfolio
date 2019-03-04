@@ -1,0 +1,31 @@
+.cover {
+background-image: url('../imgs/space.jpeg');
+background-size: cover;
+height: 700px;
+padding: 250px
+}
+
+.boxed {
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.col-sm {
+    height: 300px;
+    align-content: center
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    padding: 35px;
+    object-fit: contain;
+}
