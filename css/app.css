@@ -1,11 +1,20 @@
 .cover {
-background-image: url('../imgs/space.jpeg');
+background-image: url('../imgs/wallpaper.jpg');
 background-size: cover;
+position: relative;
 height: 700px;
 padding: 250px
 }
 
-.boxed {
+.type{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center
+}
+
+
+
+/* .boxed {
     border-style: solid;
     border-color: white;
     border-width: 10px;
@@ -16,7 +25,7 @@ padding: 250px
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-}
+} */
 
 .col-sm {
     height: 300px;
@@ -29,3 +38,42 @@ padding: 250px
     padding: 35px;
     object-fit: contain;
 }
+
+.layer {
+    background-color: rgb(4, 18, 48, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    color: rgb(227, 135, 45)
+}
+
+.btn-primary:hover{
+    background-color: rgb(227, 135, 45)
+}
+
+.circle {
+    border-style: solid;
+    border-width: 10px;
+    border: white;
+    border-radius: 50%;
+    width: 250px; 
+    height: 250px;
+    margin-top: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.name{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40pt
+}
+
