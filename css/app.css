@@ -1,79 +1,362 @@
-.cover {
-background-image: url('../imgs/wallpaper.jpg');
-background-size: cover;
-position: relative;
-height: 700px;
-padding: 250px
+html{
+    font-size: 62.5%;
 }
 
-.type{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgb(4, 18, 48, 0.8), rgb(4, 18, 48, 0.8)), url(../imgs/wallpaper.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
 
-
-/* .boxed {
-    border-style: solid;
-    border-color: white;
-    border-width: 10px;
-    text-align: center;
-    color: white;
+.header__text-box {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-} */
-
-.col-sm {
-    height: 300px;
-    align-content: center
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
 
-.card-img-top {
-    width: 100%;
-    height: 15vw;
-    padding: 35px;
-    object-fit: contain;
+.header2__text-box {
+    position: relative;
+    top: 3rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
 
-.layer {
-    background-color: rgb(4, 18, 48, 0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.heading-primary{
+    color: white;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
 }
 
-span {
-    color: rgb(227, 135, 45)
-}
-
-.btn-primary:hover{
-    background-color: rgb(227, 135, 45)
-}
-
-.circle {
+.heading-primary--profile {
     border-style: solid;
-    border-width: 10px;
+    border-width: 1rem;
     border: white;
     border-radius: 50%;
-    width: 250px; 
-    height: 250px;
-    margin-top: 175px;
+    width: 25rem; 
+    height: 25rem;
+    margin-top: 8.5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 4rem;
     display: block;
+    background-image: url(../imgs/me.jpg)
 }
 
-.name{
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40pt
+.heading-primary--main{
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
 }
+
+.heading-primary--sub{
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    color: darkorange;
+    letter-spacing: 1.25rem;
+}
+
+.progress{
+    margin: 2rem;
+    height: 3rem;
+}
+
+.education {
+    padding: 10rem;
+
+}
+
+.progress-label {
+    float: left;
+   margin-right: 3rem;
+   display: inline-block;
+}
+
+.first-letter{
+    color: rgb(4, 18, 48);
+    font-size: 5rem;
+}
+
+.education-description {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.related-courses {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.4rem;
+}
+
+.just-for-fun{
+    height: 75vh;
+    position: relative;
+    background-color: rgb(245,245 ,245 )
+}
+
+.composition{
+    position: relative;
+}
+
+.composition__photo{
+    width: 25rem;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
+    display: inline;
+}
+
+.box{
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    translate: (-50%, -50%)
+}
+
+.skill-border{
+    outline: 2rem;
+    padding: 2rem;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(4, 18, 48);
+}
+
+.composition__photo--p1{/* bootcamp*/
+    
+}
+
+.composition__photo--p2{/* css*/
+    
+}
+
+.composition__photo--p3{/* flutter*/
+    
+}
+
+.composition__photo--p4{/* java data*/
+    
+}
+
+.composition__photo--p5{/* javascr data*/
+    
+}
+
+.composition__photo--p6{
+    
+}
+
+.composition__photo--p7{
+    
+}
+
+.composition__photo:hover {
+    transform: scale(1.05) translateY(0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.4);
+    z-index: 20;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95)
+}
+
+.mainbar {
+    width: 20%;
+    border-right: medium solid darkorange;
+  }
+  
+  .moonbar-java {
+    width: 70%;
+  }
+
+  .moonbar-python {
+    width: 40%;
+  }
+
+  .moonbar-css {
+    width: 60%;
+  }
+
+  .moonbar-html {
+    width: 65%;
+  }
+
+  .moonbar-javscript {
+    width: 47%;
+  }
+
+  .moonbar-node {
+    width: 40%;
+  }
+
+  .moonbar-mysql {
+    width: 55%;
+  }
+
+  .moonbar-mongo {
+    width: 20%;
+  }
+
+  .moonbar-flutter {
+    width: 50%;
+  }
+
+  .moonbar-corona {
+    width: 35%;
+  }
+
+  .progress {
+    border-radius: 65px;
+    background-color: rgba(4, 14, 48, 0.1);
+    height: 3rem;
+  }
+  
+  .prog-text {
+    text-align: center;
+    font-size: 2.4rem;
+    padding-top: 0.2rem;
+    padding-right: 0.3rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+  }
+
+  .nicebar-container {
+    max-width: 600px;
+  }
+  
+  .nicebar {
+    height: 40px;
+  }
+  
+  .current-text {
+    text-align: right;
+    font-size: 1.4rem;
+    padding-top: 0.6rem;
+    padding-right: 0.3rem;
+  }
+
+  .bg-pgrad {
+
+    background-color: rgba(4, 18, 48,0.8); /* Standard syntax */
+    font-weight: bold;
+  }
+
+  .bg-purple {
+    background-color: rgb(4, 18, 48);
+  }
+
+  .skills{
+      background-color: rgb(253, 253, 253);
+      padding-right: 3rem;
+      padding-left: 3rem;
+      margin-bottom: 5rem;
+  }
+
+  .tech {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 800
+  }
+
+  .circle{
+      border: solid;
+      background-color: rgb(4, 18, 48);
+      border-width: .5rem;
+      border-color: darkorange;
+      border-radius: 50%;
+      padding: 4rem;
+      font-size: 2rem;
+      text-align: center;
+      width: 20rem;
+      height: 20rem;
+      margin-left: 6rem;
+      font-weight: 900;
+      color: white;
+  }
+
+  .skill-icon {
+      font-size: 3rem;
+      padding-top: 1rem;
+  }
+
+  .contact {
+      background-color: rgb(4, 18, 48);
+      color: white;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+  }
+
+  .navbar {
+    background-color: rgb(4, 18, 48);
+    height: 5vh;
+    color: white;
+  }
+
+
+  .nav-link {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  footer {
+    background-color: rgb(4, 18, 48);
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .download {
+     color: darkorange;
+     background-color: transparent;
+     font-size: 1.6rem;
+     font-weight: 300;
+     border-style: solid;
+     border-color: darkorange;
+     border-radius: 25px;
+  }
+
+  .download:hover {
+    color: white;
+    border-color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

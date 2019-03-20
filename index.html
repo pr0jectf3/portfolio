@@ -20,174 +20,303 @@
   <!--My Css-->
   <link rel="stylesheet" type="text/css" media="screen" href="./css/app.css">
 
-  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 
 </head>
 
 <body>
-  <!--NAVBAR-->
-  <nav class="navbar navbar-expand-sm sticky-top navbar-dark"
-    style="color:aliceblue; background-color: rgb(4, 18, 48);">
-    <a class="navbar-brand" href="#">Zachary Portillo</a>
-    <ul class="navbar-nav">
+
+  <nav class="navbar sticky-top bg justify-content-left">
+    <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">About Me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Portfolio</a>
+        <a class="nav-link" href="#">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Project Gallery</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
+    <button class="download">Download Resume</button>
   </nav>
 
-  <!--JUMBOTRON-->
-  <div class="cover mb-5">
-    <div class="layer">
+  <header class="header">
+    <h1 class="header__text-box">
+      <div class="heading-primary">
+        <span class="heading-primary--profile"></span>
+        <span class="heading-primary--main">Zachary Portillo</span>
+        <span class="heading-primary--sub type"></span>
+      </div>
+    </h1>
+  </header>
+
+
+  <main>
+    <section class="education">
+      <h2 class="header2__text-box">
+        <span class="about-me">About Me</span>
+        <hr style="width:10rem ;height: 2px; background-color: black">
+      </h2>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <img src="./imgs/icons/csula.png" alt="" style="margin: 3rem">
+            <p class="education-description">
+              <span class="first-letter">I</span>Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Repellendus illo sit ut, neque laudantium accusamus quis
+              unde ea omnis ullam nesciunt velit fugit fugiat, minus aliquam expedita doloribus
+              consequuntur magni.
+            </p>
+          </div>
+          <div class="col">
+            <div class="related-courses">
+              <span class="courses">Related Courses:</span>
+              <ul>
+                <li>Java Programming</li>
+                <li>Databases</li>
+                <li>Advanced Web Development</li>
+                <li>Algorithms and Data Structures</li>
+                <li>Multimedia Programming</li>
+                <li>Robotics</li>
+                <li>Software Engineering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="skills container skill-border">
+      <h2 class="tech">Techinical Skills</h2>
+      <hr style="width:10rem ;height: 2px; background-color: black">
+      <div class="row">
+        <div class="col">
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">Java</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-java"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">Python</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-python"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">HTML</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-html"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">CSS</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-css"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">Javascript</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-javscript"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">Node.js</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-node"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">MongoDB</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-mongo"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">MySQL</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-mysql"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">Flutter</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-flutter"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+          </div>
+
+          <div class="progress">
+            <div class="progress-bar nicebar bg-pgrad mainbar" aria-hidden="true">
+              <p class="prog-text text-shadow">Corona SDK</p>
+            </div>
+            <div
+              class="progress-bar nicebar bg-purple progress-bar-striped progress-bar-animated text-shadow moonbar-corona"
+              aria-hidden="true">
+              <p class="current-text"></p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="row">
+            <div class="col">
+              <div class="circle">
+                Web Developer
+                <i class="fas fa-desktop skill-icon"></i>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle">
+                Mobile App Developer
+                <i class="fas fa-mobile-alt skill-icon"></i>
+              </div>
+            </div>
+            <div class="col">
+              <div class="circle">
+                2D Game Developer
+                <i class="fas fa-gamepad skill-icon"></i>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="project-gallery">
+
+    </section>
+
+    <section class="contact">
+      <h2 class="tech">Contact Me</h2>
+      <hr style="width:10rem ;height: 2px; background-color: darkorange">
       <div class="container">
-        <img src="./imgs/me.jpg" alt="" class="circle">
-        <h1 class="name">Zachary <span>Portillo</span></h1>
-        <h3 class="type"></h3>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Full Name</label>
+            <input class="form-control form-control-lg" type="text" placeholder="Joe Shmo">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control-lg form-control" id="exampleFormControlInput1"
+              placeholder="name@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-    </div>
-  </div>
+      <div class="container-fluid">
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-discord"></i>
+        <i class="fas fa-envelope"></i>
+      </div>
+    </section>
+
+    <footer class="container-fluid">
+      <h4 class="copyright">© Zachary Portillo. All rights reserved</h4>
+    </footer>
+
+    <!-- <section class="just-for-fun">
+      <div class="box">
+        <div class="composition">
+          <a href="https://www.udemy.com/the-web-developer-bootcamp/"><img src="./imgs/icons/udemy/bootcamp.png" alt=""
+              class="composition__photo composition__photo--p1"></a>
+          <a href="https://www.udemy.com/advanced-css-and-sass/"><img src="./imgs/icons/udemy/advancedcss.png" alt=""
+              class="composition__photo composition__photo--p2"></a>
+          <a href="https://www.udemy.com/learn-flutter-dart-to-build-ios-android-apps/"><img
+              src="./imgs/icons/udemy/flutter.png" alt="" class="composition__photo composition__photo--p3"></a>
+          <a href="https://www.udemy.com/data-structures-and-algorithms-deep-dive-using-java/"><img
+              src="./imgs/icons/udemy/javaAlgorithms.png" alt="" class="composition__photo composition__photo--p4"></a>
+          <a href="https://www.udemy.com/js-algorithms-and-data-structures-masterclass/"><img
+              src="./imgs/icons/udemy/javascriptalgorithm.png" alt=""
+              class="composition__photo composition__photo--p5"></a>
+          <a href="https://www.udemy.com/python-the-complete-python-developer-course/"><img
+              src="./imgs/icons/udemy/python.png" alt="" class="composition__photo composition__photo--p6"></a>
+          <a href="https://www.udemy.com/the-complete-javascript-course/"><img src="./imgs/icons/udemy/javascript.png"
+              alt="" class="composition__photo composition__photo--p7"></a>
+        </div>
+      </div>
+
+      <p></p>
+    </section> -->
 
 
+
+  </main>
   <!--ABOUTME-->
-  <h1>ABOUT</h1>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/java.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Java</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/javascript.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Javascript</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/dart.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Dart</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/node.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Node.js</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/lua.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Lua</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/python.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Python</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/corona.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Corona SDK</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/flutter.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Flutter</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/mysql.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">MySQL</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/mongo.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">MongoDB</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/cpp.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">C++</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" src="./imgs/icons/firebase.png" style="background-color: rgb(4, 18, 48);">
-            <div class="card-body">
-              <h4 class="card-title">Firebase</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
 
@@ -195,13 +324,14 @@
   <script src="./scripts/typed.js"></script>
   <script>
     var typed = new Typed('.type', {
-    strings: ["java wizard","web developer","javascript hero","total gamer","mobile developer", 'aspiring software engineer'],
-    typeSpeed: 125,
-    backSpeed: 75,
-    loop: true,
-    shuffle: true,
-    showCursor: false
-  });
+      strings: ["java wizard", "web developer", "javascript hero", "total gamer", "mobile developer", 'aspiring software engineer'],
+      typeSpeed: 125,
+      backSpeed: 75,
+      loop: true,
+      shuffle: true,
+      startDelay: 1000,
+      showCursor: false
+    });
   </script>
 
 </body>
