@@ -50,7 +50,10 @@ body {
     margin-right: auto;
     margin-bottom: 4rem;
     display: block;
-    background-image: url(../imgs/me.jpg)
+    background-image: url(../imgs/me.jpg);
+    background-size: 25rem;
+    background-position-y: -4rem;
+    
 }
 
 .heading-primary--main{
@@ -316,6 +319,7 @@ body {
   }
 
   footer {
+    padding-top: 8rem;
     background-color: rgb(4, 18, 48);
     text-align: center;
     color: white;
@@ -340,6 +344,18 @@ body {
   .download:hover {
     color: white;
     border-color: white;
+  }
+
+  .contact-icon {
+    float: left;
+    font-size: 3rem;
+    padding-right: 1rem;
+    animation: all(2s);
+  }
+
+  .contact-icon:hover {
+    color: darkorange;
+    transform: scale(1.25) 
   }
 
 
