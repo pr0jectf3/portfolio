@@ -269,7 +269,7 @@ body {
       background-color: rgb(253, 253, 253);
       padding-right: 3rem;
       padding-left: 3rem;
-      margin-bottom: 5rem;
+      margin-bottom: 15rem;
   }
 
   .tech {
@@ -357,6 +357,78 @@ body {
     color: darkorange;
     transform: scale(1.25) 
   }
+
+  .card-decoration {
+    margin-bottom: 3rem;
+    border-color: darkorange;
+    border-width: .45rem;
+    border-radius: 25px;
+    padding: .5rem;
+    background-color: rgb(4, 18, 48);
+  }
+
+  .card-body {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .card-img-top{
+    border-radius: 25px;
+  }
+
+  .project-link{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+
+  .project-link--icon{
+    padding-right: .5rem;
+  }
+
+  .carousel-indicators li{
+    background-color: rgb(4, 18, 48);
+  }
+
+  .carousel-indicators .active{
+    background-color: darkorange;
+  }
+
+  
+  .carousel-control-next-icon:after{
+    content: '>';
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(4, 18, 48);
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(4, 18, 48);
+  }
+
+  .project-title {
+    letter-spacing: .2rem;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold
+  }
+
+  .card{
+    width: 35rem; 
+    height: 50rem
+  }
+
+  .project-gallery{
+    margin-bottom: 15rem;
+  }
+
+
+
 
 
 
