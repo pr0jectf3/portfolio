@@ -48,7 +48,7 @@
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
-    <button class="download">Download Resume</button>
+    <a class="download" href="./docs/portillo.zachary.resume.pdf" download>Download Resume</a>
   </nav>
 
   <header class="header">
@@ -74,10 +74,10 @@
           <div class="col">
             <img src="./imgs/icons/csula.png" alt="" style="margin: 3rem">
             <p class="education-description">
-              <span class="first-letter">I</span>Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Repellendus illo sit ut, neque laudantium accusamus quis
-              unde ea omnis ullam nesciunt velit fugit fugiat, minus aliquam expedita doloribus
-              consequuntur magni.
+              Currently attending California State University, Los Angeles for my B.S. Computer Science. 
+              Studying Computer Science has taught me to think creativly and to not be shy when it comes to
+              tackling challenging problems. By the time I graduate, which is expected to be Spring 2020, I 
+              will have the nessassary skill set to become a successful software engineer.
             </p>
           </div>
           <div class="col">
@@ -486,7 +486,7 @@
             <label for="exampleFormControlTextarea1">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         </form>
       </div>
     </section>
@@ -543,6 +543,7 @@
 
 
   <script src="./scripts/typed.js"></script>
+  <script src="./scripts/main.js"></script>
   <script>
     var typed = new Typed('.type', {
       strings: ["java wizard", "web developer", "javascript hero", "total gamer", "mobile developer", 'aspiring software engineer'],
